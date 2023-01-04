@@ -1,0 +1,100 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column1 {
+  width: 25%;
+  padding: 0 10px;
+  margin: auto;
+}
+.column2 {
+  width: 30%;
+  padding: 0 10px;
+  margin: auto;
+}
+
+/* Remove extra left and right margins, due to padding */
+/* .row {display: run-in;} */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Etiquetas Tipos */
+.label {
+  color: #f1f1f1;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+}
+
+.success {background-color: #04AA6D;} /* Green */
+.info {background-color: #2196F3;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */
+.other {background-color: #417945; color: black;} /* Gray */
+.legendary{background-color: #1ddfe6; color: black}
+.steel {background-color: #8f9493;color: rgb(0, 0, 0);}
+.water {background-color: #1760e7;}
+.bug {background-color: #417945;}
+.dragon {background-color: #510b63;}
+.electric {background-color: #f6fa1b; color: #0b0c0c}
+.ghost {background-color: #37065f;}
+.fire {background-color: #dd0808;}
+.fairy {background-color: #e68cde;}
+.ice {background-color: #1ddfe6; color:rgb(0, 0, 0)}
+.fighting {background-color: #f07b1b;}
+.normal {background-color: #318061; color:rgb(0, 0, 0)}
+.grass {background-color: #0ec545;}
+.psychic {background-color: #9b6b9c;}
+.rock {background-color: #77670b;}
+.dark {background-color: #010f0a; color: #8f9493;}
+.ground {background-color: #42340d;}
+.poison {background-color: #530ca3fd;}
+.flying {background-color: #5584c2;}
+
+.container{
+  text-align: left;
+}
+.container p{
+  text-align: justify;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  margin: 2px;
+}
